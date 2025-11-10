@@ -63,49 +63,6 @@ Navigate to **Mautic Settings → Plugins → Mautic AI Connection** to configur
    - API key for authenticating with your LiteLLM instance or Openai.
    - This credential is encrypted and stored securely
 
-## LiteLLM Setup
-
-This plugin requires a LiteLLM proxy server. LiteLLM acts as a unified interface to multiple AI providers.
-
-### What is LiteLLM?
-
-LiteLLM is a proxy server that provides a unified API for 100+ LLMs including:
-- OpenAI (GPT-3.5, GPT-4)
-- Anthropic (Claude)
-- Google (Gemini)
-- Meta (Llama)
-- And many more...
-
-### Quick LiteLLM Setup
-
-1. **Install LiteLLM:**
-   ```bash
-   pip install litellm[proxy]
-   ```
-
-2. **Create a config file** (`litellm_config.yaml`):
-   ```yaml
-   model_list:
-     - model_name: gpt-3.5-turbo
-       litellm_params:
-         model: openai/gpt-3.5-turbo
-         api_key: your-openai-key
-
-     - model_name: claude-3-sonnet
-       litellm_params:
-         model: anthropic/claude-3-sonnet-20240229
-         api_key: your-anthropic-key
-   ```
-
-3. **Start LiteLLM:**
-   ```bash
-   litellm --config litellm_config.yaml --port 4000
-   ```
-
-4. **Configure this plugin** with:
-   - Endpoint: `http://localhost:4000`
-   - Secret Key: (your master key if configured, or leave empty for local development)
-
 ## Usage in Other Plugins
 
 Other Mautic plugins can use the LiteLLM service provided by this bundle.

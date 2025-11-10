@@ -28,4 +28,12 @@ class AiConnectionIntegration extends AbstractIntegration
             'litellm_secret_key' => 'LiteLLM Secret Key',
         ];
     }
+
+    /**
+     * Get the path to the integration icon
+     */
+    public function getIcon(): string
+    {
+        return 'plugins/MauticAIconnectionBundle/Assets/img/mauticai.png';
+    }
 }

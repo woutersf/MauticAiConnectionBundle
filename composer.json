@@ -1,0 +1,33 @@
+{
+    "name": "mautic/ai-connection-bundle",
+    "description": "Core AI connection plugin for Mautic - manages LiteLLM integration and shared AI services",
+    "type": "mautic-plugin",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Frederik Wouters",
+            "email": "woutersf@gmail.com"
+        }
+    ],
+    "keywords": [
+        "mautic",
+        "plugin",
+        "ai",
+        "litellm",
+        "artificial-intelligence",
+        "llm",
+        "integration"
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "mautic/core": "^4.0|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MauticPlugin\\MauticAIconnectionBundle\\": ""
+        }
+    },
+    "extra": {
+        "install-directory-name": "MauticAIconnectionBundle"
+    }
+}

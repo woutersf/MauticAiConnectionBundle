@@ -55,12 +55,12 @@ Navigate to **Mautic Settings → Plugins → Mautic AI Connection** to configur
 ### Required Settings
 
 1. **LiteLLM Endpoint**
-   - URL of your LiteLLM proxy server
-   - Example: `http://localhost:4000` or `https://your-litellm-server.com`
+   - URL of your LiteLLM proxy server or an OPENAI API key.
+   - Example: `http://localhost:4000` or `https://your-litellm-server.com` or https://api.openai.com/v1
    - **Note:** This should point to your LiteLLM proxy, NOT directly to OpenAI or other providers
 
 2. **LiteLLM Secret Key**
-   - API key for authenticating with your LiteLLM instance
+   - API key for authenticating with your LiteLLM instance or Openai.
    - This credential is encrypted and stored securely
 
 ## LiteLLM Setup

@@ -1,5 +1,5 @@
 {
-    "name": "mautic/ai-connection-bundle",
+    "name": "woutersf/ai-connection-bundle",
     "description": "Core AI connection plugin for Mautic - manages LiteLLM integration and shared AI services",
     "type": "mautic-plugin",
     "license": "GPL-3.0-or-later",
